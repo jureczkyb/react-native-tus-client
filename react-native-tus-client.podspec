@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform     = :ios, '8.0'
   s.dependency 'React'
-  s.dependency 'TUSKit', '1.3.12'
+  s.dependency 'TUSKit', '~>1.3.12'
 end
 
   
