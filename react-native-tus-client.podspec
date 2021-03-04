@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = 'ios/*.{h,m}'
   s.requires_arc = true
   s.platform     = :ios, '8.0'
-  s.dependency 'React'
+  s.dependency 'React', '1.3.12'
   s.dependency 'TUSKit'
 end
 
