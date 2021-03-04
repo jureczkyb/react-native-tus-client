@@ -1,5 +1,7 @@
 /** Object used to setup a tus upload */
 interface Options {
+    uploadId: string;
+    file: string;
     /** URL used to create a new upload */
     endpoint: string;
     chunkSize: number;
@@ -40,14 +42,13 @@ declare class Upload {
     url: string;
     private options;
     private subscriptions;
-    private uploadId;
+    uploadId: string;
     private aborting;
     /**
      *
-     * @param file The file absolute path.
      * @param settings The options argument used to setup your tus upload.
      */
-    constructor(file: string, options: Options);
+    constructor(options: Options);
     /**
      * Start or resume the upload using the specified file.
      * If no file property is available the error handler will be called.
